@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Festivals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-100 text-gray-900 min-h-screen flex flex-col">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4 text-white flex justify-between items-center">
+        <h1 class="text-2xl font-bold">National Festivals</h1>
+        <ul class="hidden md:flex gap-4">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="national.html" class="hover:underline">National</a></li>
+            <li><a href="religious.html" class="hover:underline">Religious</a></li>
+            <li><a href="harvest.html" class="hover:underline">Harvest</a></li>
+            <li><a href="regional.html" class="hover:underline">Regional</a></li>
+        </ul>
+        <button id="menu-btn" class="md:hidden text-white text-2xl">☰</button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="hidden md:hidden bg-blue-700 text-white flex flex-col p-4">
+        <li><a href="index.html" class="block py-2">Home</a></li>
+        <li><a href="national.html" class="block py-2">National</a></li>
+        <li><a href="religious.html" class="block py-2">Religious</a></li>
+        <li><a href="harvest.html" class="block py-2">Harvest</a></li>
+        <li><a href="regional.html" class="block py-2">Regional</a></li>
+    </ul>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+        <section class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div>
+                <img src="2.webp" alt="Republic Day" class="w-[500px] h-[350px] object-cover mx-auto rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mt-2">Republic Day</h3>
+                <p class="text-sm">Celebrated on January 26th to honor the Constitution of India.</p>
+            </div>
+            <div>
+                <img src="3.jpg" alt="Independence Day" class="w-[500px] h-[350px] object-cover mx-auto rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mt-2">Independence Day</h3>
+                <p class="text-sm">Celebrated on August 15th to mark India's independence from British rule.</p>
+            </div>
+            <div>
+                <img src="4.jpeg" alt="Gandhi Jayanti" class="w-[500px] h-[350px] object-cover mx-auto rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mt-2">Gandhi Jayanti</h3>
+                <p class="text-sm">Celebrated on October 2nd to honor Mahatma Gandhi's birthday.</p>
+            </div>
+        </section>
+
+        <!-- Description -->
+        <section class="p-6 text-left max-w-5xl mx-auto">
+            <p class="text-lg leading-relaxed">
+                <span class="font-semibold text-gray-900">National festivals</span> in India are deeply rooted in the country’s history, symbolizing its journey towards freedom, democracy, and unity. These occasions not only commemorate significant historical events but also instill a sense of patriotism and national pride among citizens.
+            </p>
+            <p class="mt-4 text-lg leading-relaxed">
+                <strong class="text-xl text-blue-800">Republic Day</strong>, celebrated annually on <span class="font-semibold">January 26th</span>, marks the adoption of India's Constitution in 1950, signifying the nation’s transition into a sovereign democratic republic. The highlight of the day is the grand parade in New Delhi, which showcases the country's military strength, cultural heritage, and technological advancements.
+            </p>
+            <p class="mt-4 text-lg leading-relaxed">
+                <strong class="text-xl text-red-800">Independence Day</strong>, observed on <span class="font-semibold">August 15th</span>, honors India's freedom from British rule in 1947. The day begins with the Prime Minister hoisting the national flag at the Red Fort in Delhi, followed by a powerful speech addressing the nation.
+            </p>
+            <p class="mt-4 text-lg leading-relaxed">
+                <strong class="text-xl text-green-800">Gandhi Jayanti</strong>, observed on <span class="font-semibold">October 2nd</span>, is dedicated to <span class="italic">Mahatma Gandhi</span>, the Father of the Nation, who played a pivotal role in India's struggle for independence through his principles of non-violence and truth.
+            </p>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center p-4 mt-auto">
+        <p>&copy; 2025 Festivals of India</p>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

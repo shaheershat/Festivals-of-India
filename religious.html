@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Religious Festivals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-100 text-gray-900 min-h-screen flex flex-col">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-green-600 p-4 text-white flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Religious Festivals</h1>
+        <ul class="hidden md:flex gap-4">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="national.html" class="hover:underline">National</a></li>
+            <li><a href="religious.html" class="hover:underline">Religious</a></li>
+            <li><a href="harvest.html" class="hover:underline">Harvest</a></li>
+            <li><a href="regional.html" class="hover:underline">Regional</a></li>
+        </ul>
+        <button id="menu-btn" class="md:hidden text-white text-2xl">☰</button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="hidden md:hidden bg-green-700 text-white flex flex-col p-4">
+        <li><a href="index.html" class="block py-2">Home</a></li>
+        <li><a href="national.html" class="block py-2">National</a></li>
+        <li><a href="religious.html" class="block py-2">Religious</a></li>
+        <li><a href="harvest.html" class="block py-2">Harvest</a></li>
+        <li><a href="regional.html" class="block py-2">Regional</a></li>
+    </ul>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+        <section class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div>
+                <img src="5.jpg" alt="Eid" class="w-[500px] h-[350px] object-cover mx-auto rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mt-2">Eid</h3>
+                <p class="text-sm">A sacred festival celebrated by Muslims with prayers and feasts.</p>
+            </div>
+            <div>
+                <img src="6.jpg" alt="Christmas" class="w-[500px] h-[350px] object-cover mx-auto rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mt-2">Christmas</h3>
+                <p class="text-sm">Celebrates the birth of Jesus Christ with joy and festivity.</p>
+            </div>
+            <div>
+                <img src="7.jpeg" alt="Guru Nanak Jayanti" class="w-[500px] h-[350px] object-cover mx-auto rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mt-2">Guru Nanak Jayanti</h3>
+                <p class="text-sm">Honors the birth anniversary of Guru Nanak, the founder of Sikhism.</p>
+            </div>
+        </section>
+
+        <!-- Description -->
+        <section class="p-6">
+            <div class="max-w-5xl mx-auto text-lg leading-relaxed">
+                <p class="mb-4 text-left">
+                    <span class="font-semibold text-gray-900">Religious festivals</span> in India are a vibrant expression of faith, unity, and the country’s rich cultural diversity. These celebrations bring people together, transcending religious boundaries and fostering a sense of togetherness.
+                </p>
+                <p class="mb-4 text-left">
+                    <strong class="text-xl text-blue-800">Eid</strong>, one of the most significant Islamic festivals, marks the end of the holy month of Ramadan, a period of fasting, prayer, and reflection. Muslims gather for special prayers at mosques, share festive meals, and practice acts of charity, reinforcing values of compassion and gratitude.
+                </p>
+                <p class="mb-4 text-left">
+                    <strong class="text-xl text-red-800">Christmas</strong>, celebrated by Christians across India, is a festival of love, joy, and goodwill that commemorates the birth of Jesus Christ. The occasion includes decorated churches, midnight Mass, carol singing, and the exchange of gifts. Homes and streets light up with Christmas trees, stars, and cribs, creating a warm festive atmosphere.
+                </p>
+                <p class="text-left">
+                    <strong class="text-xl text-yellow-800">Guru Nanak Jayanti</strong>, the most sacred festival for Sikhs, honors the birth of Guru Nanak, the founder of Sikhism. Devotees visit gurdwaras, participate in processions, and engage in community service, such as preparing and serving free meals (<span class="italic">langar</span>) to all, regardless of background or social status.
+                </p>
+            </div>
+        </section>
+        
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-600 text-white text-center p-4 mt-auto">
+        <p>&copy; 2025 Festivals of India</p>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

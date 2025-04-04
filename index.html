@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festivals of India</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-red-100 text-gray-900 min-h-screen flex flex-col">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-red-600 p-4 text-white flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Festivals of India</h1>
+        <ul class="hidden md:flex gap-4">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="national.html" class="hover:underline">National</a></li>
+            <li><a href="religious.html" class="hover:underline">Religious</a></li>
+            <li><a href="harvest.html" class="hover:underline">Harvest</a></li>
+            <li><a href="regional.html" class="hover:underline">Regional</a></li>
+        </ul>
+        <button id="menu-btn" class="md:hidden text-white">☰</button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="hidden md:hidden bg-red-700 text-white flex flex-col p-4">
+        <li><a href="index.html" class="block py-2">Home</a></li>
+        <li><a href="national.html" class="block py-2">National</a></li>
+        <li><a href="religious.html" class="block py-2">Religious</a></li>
+        <li><a href="harvest.html" class="block py-2">Harvest</a></li>
+        <li><a href="regional.html" class="block py-2">Regional</a></li>
+    </ul>
+
+    <!-- Main Content -->
+    <main class="flex-1 text-center p-6">
+        <h2 class="text-3xl font-bold mb-4">Welcome to Festivals of India</h2>
+        <img src="1.jpg" alt="Colorful Indian festivals" class="w-full max-w-4xl mx-auto rounded-lg shadow-lg">
+        <p class="max-w-2xl mx-auto text-lg mt-4">
+            Explore India's rich culture through its National, Religious, Harvest, and Regional festivals.
+        </p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-red-600 text-white text-center p-4 mt-auto">
+        <p>&copy; 2025 Festivals of India</p>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

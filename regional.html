@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regional Festivals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-purple-100 text-gray-900 min-h-screen flex flex-col">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-purple-600 p-4 text-white flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Regional Festivals</h1>
+        <ul class="hidden md:flex gap-4">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="national.html" class="hover:underline">National</a></li>
+            <li><a href="religious.html" class="hover:underline">Religious</a></li>
+            <li><a href="harvest.html" class="hover:underline">Harvest</a></li>
+            <li><a href="regional.html" class="hover:underline">Regional</a></li>
+        </ul>
+        <button id="menu-btn" class="md:hidden text-white text-2xl">☰</button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="hidden md:hidden bg-purple-700 text-white flex flex-col p-4">
+        <li><a href="index.html" class="block py-2">Home</a></li>
+        <li><a href="national.html" class="block py-2">National</a></li>
+        <li><a href="religious.html" class="block py-2">Religious</a></li>
+        <li><a href="harvest.html" class="block py-2">Harvest</a></li>
+        <li><a href="regional.html" class="block py-2">Regional</a></li>
+    </ul>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+        <section class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div>
+                <img src="11.jpg" alt="Onam" class="w-[500px] h-[350px] object-cover mx-auto rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mt-2">Onam</h3>
+                <p class="text-sm">A grand festival of Kerala celebrating the return of King Mahabali.</p>
+            </div>
+            <div>
+                <img src="12.jpg" alt="Durga Puja" class="w-[500px] h-[350px] object-cover mx-auto rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mt-2">Durga Puja</h3>
+                <p class="text-sm">A major festival in Bengal celebrating Goddess Durga.</p>
+            </div>
+            <div>
+                <img src="13.jpg" alt="Navratri" class="w-[500px] h-[350px] object-cover mx-auto rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mt-2">Navratri</h3>
+                <p class="text-sm">A Hindu festival dedicated to the worship of Goddess Durga.</p>
+            </div>
+        </section>
+        
+        <!-- Description -->
+        <section class="p-6 text-left max-w-5xl mx-auto">
+            <p class="text-lg leading-relaxed text-gray-900">
+                <span class="font-semibold">India’s regional festivals</span> are a vibrant expression of local culture, traditions, and community spirit, uniting people in celebration and devotion. These festivals, deeply rooted in history and folklore, showcase the diverse cultural heritage of different states while spreading joy, togetherness, and spirituality.
+            </p>
+        
+            <p class="mt-4 text-lg leading-relaxed">
+                <strong class="text-xl text-green-800">Onam</strong>, the grandest festival of Kerala, is a ten-day-long harvest festival that marks the legendary homecoming of <span class="font-semibold">King Mahabali</span>. The celebrations include elaborate floral rangolis called <span class="italic">Pookalam</span>, the famous <span class="font-semibold">Vallam Kali</span> (boat races), traditional dance forms like <span class="italic">Kathakali</span> and <span class="italic">Pulikali</span>, and the grand <span class="font-semibold">Onam Sadhya</span>—a feast served on banana leaves with an array of delicious vegetarian dishes. The festival reflects Kerala’s cultural richness and the spirit of harmony among its people.
+            </p>
+        
+            <p class="mt-4 text-lg leading-relaxed">
+                <strong class="text-xl text-red-800">Durga Puja</strong>, predominantly celebrated in <span class="font-semibold">West Bengal</span>, is one of the most elaborate and artistically vibrant festivals in India. The festival honors <span class="font-semibold">Goddess Durga’s</span> victory over the demon <span class="italic">Mahishasura</span>, symbolizing the triumph of good over evil. Magnificently crafted idols of the goddess are worshipped in grandly decorated <span class="font-semibold">pandals</span>, accompanied by cultural performances, processions, and traditional <span class="italic">Dhunuchi</span> dance. The festival is not only a religious occasion but also a major social and artistic event, drawing visitors from across the country.
+            </p>
+        
+            <p class="mt-4 text-lg leading-relaxed">
+                <strong class="text-xl text-blue-800">Navratri</strong>, celebrated across India, is a nine-night festival dedicated to the worship of <span class="font-semibold">Goddess Durga</span> in her different forms. The festival is marked by fasting, devotional songs, and vibrant dance forms like <span class="font-semibold">Garba</span> and <span class="font-semibold">Dandiya</span>, especially in Gujarat and Maharashtra. People dress in colorful traditional attire, gathering in large groups to perform rhythmic dances, creating a festive and spiritual atmosphere.
+            </p>
+        </section>
+        
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-purple-600 text-white text-center p-4 mt-auto">
+        <p>&copy; 2025 Festivals of India</p>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
